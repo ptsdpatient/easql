@@ -1,0 +1,103 @@
+/* Base styles */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #ff7984; /* Base text color */
+  font-family: 'Fira Code', monospace;
+  padding: 1px;
+  margin: 1px;
+  padding-right: 6rem;
+  text-shadow: none;
+}
+
+code[class*="language-"]::selection,
+pre[class*="language-"]::selection {
+  /* background-color: #3e4451; Selection background color */
+}
+
+/* Line numbers */
+pre[class*="language-"]::before {
+  display: none; /* Hide default line numbers if any */
+}
+
+/* Token styles */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  /* color: #5c6370; Comment color */
+}
+
+.token.punctuation {
+  color: #ebdf38; /* Punctuation color */
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f56571; /* Property, tag, constant, symbol, deleted color */
+}
+
+.token.boolean,
+.token.number {
+  color: #f1ae6f; /* Boolean and number color */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6f072; /* Selector, attribute name, string, char, builtin, inserted color */
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted::hover {
+  /* background-color: #3e4451; Selector, attribute name, string, char, builtin, inserted color */
+}
+
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #7dd2dd; /* Operator, entity, URL, CSS string, style string, variable color */
+  
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #76bdf8; /* At-rule, attribute value, function, class name color */
+}
+
+.token.keyword {
+  color: #e38ffd; /* Keyword color */
+}
+
+.token.regex,
+.token.important {
+  color: #e38ffd; /* Regex and important color */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
